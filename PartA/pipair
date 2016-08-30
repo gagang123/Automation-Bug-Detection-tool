@@ -1,0 +1,11 @@
+#!/bin/bash
+#set -x
+opt -print-callgraph $1 2> callgraph.txt 1>/dev/null
+
+p=`pwd`
+cd ../ &> /dev/null
+java Proj $p/"callgraph.txt" $2 $3  2> /dev/null
+#rm proj2.txt
+cd - &> /dev/null
+#rm proj*
+
