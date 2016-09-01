@@ -1,3 +1,9 @@
+**Introduction**
+
+It is based on the idea of inferring likely invariants from call-graphs for bug detection. Given a bit code, 
+We used LLVM to generate call graphs into plain text format,and then analyze the textual call graphs to generate function pairs and detect bugs.
+
+
 When performing path simulation analysis via a tool like LLVM, sometimes a defect will be reported on a path that is infeasible at runtime. 
 This reported defect should be eliminated from the static analysis results.
 
